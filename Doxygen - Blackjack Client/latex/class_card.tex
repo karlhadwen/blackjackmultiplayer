@@ -1,0 +1,99 @@
+\hypertarget{class_card}{\section{Card Class Reference}
+\label{class_card}\index{Card@{Card}}
+}
+
+
+{\ttfamily \#include $<$card.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_card_a783f5854cbe8c183ee3d4414c01472c0}{Card} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the card, not overloaded just a simple constructor that does nothing. \end{DoxyCompactList}\item 
+\hyperlink{class_card_a75f9504162163e35ee8b435418e120c8}{Card} (char s, Q\-String f)
+\begin{DoxyCompactList}\small\item\em An overloaded constructor that holds the suit and face of the card. \end{DoxyCompactList}\item 
+char \hyperlink{class_card_a9b3bd1aff6901a857f651098e082651d}{get\-\_\-suit} ()
+\item 
+Q\-String \hyperlink{class_card_afa4d391b07b84127dd5a6fb942dc403c}{get\-\_\-face} ()
+\item 
+Q\-String \hyperlink{class_card_ab4962a87e9189aa1c197195a346042d2}{get\-\_\-card\-\_\-element} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A lightweight class that allows us to put together the getters of cards so from this class we can get the suit and face cards. Moreover I've put together two private variables for the face and suit cards. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_card_a783f5854cbe8c183ee3d4414c01472c0}{\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\subsubsection[{Card}]{\setlength{\rightskip}{0pt plus 5cm}Card\-::\-Card (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_card_a783f5854cbe8c183ee3d4414c01472c0}
+
+
+Constructor for the card, not overloaded just a simple constructor that does nothing. 
+
+Put together both the front of the card and the suit of the card. We need to know this for later methods and variables.
+
+Very lightweight source file that has mainly getter methods. \hypertarget{class_card_a75f9504162163e35ee8b435418e120c8}{\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\subsubsection[{Card}]{\setlength{\rightskip}{0pt plus 5cm}Card\-::\-Card (
+\begin{DoxyParamCaption}
+\item[{char}]{s, }
+\item[{Q\-String}]{f}
+\end{DoxyParamCaption}
+)}}\label{class_card_a75f9504162163e35ee8b435418e120c8}
+
+
+An overloaded constructor that holds the suit and face of the card. 
+
+This constructor just basically holds the suit and face of any card. 
+\begin{DoxyParams}{Parameters}
+{\em s} & is a char for the suit of the card \\
+\hline
+{\em f} & is a Q\-String for the face of the card\\
+\hline
+\end{DoxyParams}
+Let's get the card value, firstly the suit and secondly we will get the face value of the card. 
+\begin{DoxyParams}{Parameters}
+{\em s} & the suit card value \\
+\hline
+{\em f} & the face card value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_card_ab4962a87e9189aa1c197195a346042d2}{\index{Card@{Card}!get\-\_\-card\-\_\-element@{get\-\_\-card\-\_\-element}}
+\index{get\-\_\-card\-\_\-element@{get\-\_\-card\-\_\-element}!Card@{Card}}
+\subsubsection[{get\-\_\-card\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Card\-::get\-\_\-card\-\_\-element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_card_ab4962a87e9189aa1c197195a346042d2}
+Use a Q\-String to get the card element.
+
+Get the card element, plus the suit. \hypertarget{class_card_afa4d391b07b84127dd5a6fb942dc403c}{\index{Card@{Card}!get\-\_\-face@{get\-\_\-face}}
+\index{get\-\_\-face@{get\-\_\-face}!Card@{Card}}
+\subsubsection[{get\-\_\-face}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Card\-::get\-\_\-face (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_card_afa4d391b07b84127dd5a6fb942dc403c}
+Get the face value of the card. \hypertarget{class_card_a9b3bd1aff6901a857f651098e082651d}{\index{Card@{Card}!get\-\_\-suit@{get\-\_\-suit}}
+\index{get\-\_\-suit@{get\-\_\-suit}!Card@{Card}}
+\subsubsection[{get\-\_\-suit}]{\setlength{\rightskip}{0pt plus 5cm}char Card\-::get\-\_\-suit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_card_a9b3bd1aff6901a857f651098e082651d}
+These are getters that allow us to get the suit and face of any particular card that we request.
+
+Get the suit value of the card. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+card.\-h\item 
+card.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{class_deck}{\section{Deck Class Reference}
+\label{class_deck}\index{Deck@{Deck}}
+}
+
+
+{\ttfamily \#include $<$deck.\-h$>$}
+
+Inheritance diagram for Deck\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_deck}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}{Deck} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the deck. \end{DoxyCompactList}\item 
+void \hyperlink{class_deck_a1036fba7b0c9e1ce8c78aae21a62594c}{get\-Data} ()
+\item 
+void \hyperlink{class_deck_ad3802b8719178824b95c5cbbca184ea1}{clear\-\_\-deck} ()
+\item 
+\hyperlink{class_card}{Card} \hyperlink{class_deck_a16604aabf7fc56dd44a72c4e862758cf}{deal} ()
+\item 
+int \hyperlink{class_deck_a737f7e2a1351f908be1da4d9edcc483b}{get\-\_\-deck\-\_\-size} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class \hyperlink{class_deck}{Deck} inherits the stack and the card object so that we can keep pushing and popping cards onto the stack. This class holds the data for face cards, suit cards and a vector set to hold the cards. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}{\index{Deck@{Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!Deck@{Deck}}
+\subsubsection[{Deck}]{\setlength{\rightskip}{0pt plus 5cm}Deck\-::\-Deck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}
+
+
+Constructor for the deck. 
+
+Constructor for the \hyperlink{class_deck}{Deck} that holds the stack that holds a card 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_card}{Card}} & we must push a card onto the stack \\
+\hline
+\end{DoxyParams}
+We must get the data from the method below that gives us the face and suit of the card.
+
+\subsection{Member Function Documentation}
+\hypertarget{class_deck_ad3802b8719178824b95c5cbbca184ea1}{\index{Deck@{Deck}!clear\-\_\-deck@{clear\-\_\-deck}}
+\index{clear\-\_\-deck@{clear\-\_\-deck}!Deck@{Deck}}
+\subsubsection[{clear\-\_\-deck}]{\setlength{\rightskip}{0pt plus 5cm}void Deck\-::clear\-\_\-deck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_deck_ad3802b8719178824b95c5cbbca184ea1}
+Let's clear the deck, using thd \hyperlink{class_stack_acce5debc5c2f8e0cb5238af3d6ddc433}{Deck\-::clear()} method, after that we get new data. \hypertarget{class_deck_a16604aabf7fc56dd44a72c4e862758cf}{\index{Deck@{Deck}!deal@{deal}}
+\index{deal@{deal}!Deck@{Deck}}
+\subsubsection[{deal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Card} Deck\-::deal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_deck_a16604aabf7fc56dd44a72c4e862758cf}
+Deal the cards and then get the value of the card. Once we've done this we will pop the stack, once that is done, let's return the value. $<$ a \hyperlink{class_card}{Card} class value
+
+$<$ return the value of the card when it's delt \hypertarget{class_deck_a737f7e2a1351f908be1da4d9edcc483b}{\index{Deck@{Deck}!get\-\_\-deck\-\_\-size@{get\-\_\-deck\-\_\-size}}
+\index{get\-\_\-deck\-\_\-size@{get\-\_\-deck\-\_\-size}!Deck@{Deck}}
+\subsubsection[{get\-\_\-deck\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int Deck\-::get\-\_\-deck\-\_\-size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_deck_a737f7e2a1351f908be1da4d9edcc483b}
+Let's get the size of the deck, as we need to know this sometimes. \begin{DoxyReturn}{Returns}
+Deck\-::\-Size() this allows us to get the size of the deck. 
+\end{DoxyReturn}
+\hypertarget{class_deck_a1036fba7b0c9e1ce8c78aae21a62594c}{\index{Deck@{Deck}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!Deck@{Deck}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Deck\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_deck_a1036fba7b0c9e1ce8c78aae21a62594c}
+Here we can get the data. Basically the data is the details of the cards, such as the suit of the card and the face of the card. A lot of functionality is implemented within this method. We shuffle the cards in the vectors too, when that's done and a user is playing we push and pop the stack. Face cards Q\-String array that holds the numbers of the cards.
+
+Char suit cards array that holds the chars to the values of the cards.
+
+Vector that holds cards, these cards are passed in as objects.
+
+Vector that holds cards, these cards are iterations--passed in as objects.
+
+$<$ Let's get a random value
+
+Here we are adding the 52 cards to the card\-\_\-vector\-\_\-holder, we do this by passing in the faces and suits.
+
+Let's use a random shuffle starting at the begining of the card\-\_\-vector\-\_\-holder, once we've done that we'll finish up at card\-\_\-vector\-\_\-holder, but at the end.
+
+Let's push the cards onto the stack.
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+deck.\-h\end{DoxyCompactItemize}

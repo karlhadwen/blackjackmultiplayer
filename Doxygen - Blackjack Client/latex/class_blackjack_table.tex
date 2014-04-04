@@ -1,0 +1,62 @@
+\hypertarget{class_blackjack_table}{\section{Blackjack\-Table Class Reference}
+\label{class_blackjack_table}\index{Blackjack\-Table@{Blackjack\-Table}}
+}
+
+
+{\ttfamily \#include $<$Blackjack\-Table.\-h$>$}
+
+Inheritance diagram for Blackjack\-Table\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_blackjack_table}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_blackjack_table_a54a84c3cf0b00d6b6752ea492cda19a4}{Game\-Finished} (bool user\-Win)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_blackjack_table_a3b71f8e7d2458679452339977c4b3509}{Blackjack\-Table} (Q\-Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class (header) manages the \hyperlink{class_blackjack}{Blackjack} table. Things such as the hit, stand and new game slots are managed from this class. In addition to this we also have the game finished signal in this class. Giving the signal to the slot that controls the game finished allows us to finish the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_blackjack_table_a3b71f8e7d2458679452339977c4b3509}{\index{Blackjack\-Table@{Blackjack\-Table}!Blackjack\-Table@{Blackjack\-Table}}
+\index{Blackjack\-Table@{Blackjack\-Table}!BlackjackTable@{Blackjack\-Table}}
+\subsubsection[{Blackjack\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Blackjack\-Table\-::\-Blackjack\-Table (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_blackjack_table_a3b71f8e7d2458679452339977c4b3509}
+\hyperlink{class_blackjack_table}{Blackjack\-Table} setup that we use to setup all the buttons and grid layouts. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & basically just to inherit and grab the Widget that we use as the table. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_blackjack_table_a54a84c3cf0b00d6b6752ea492cda19a4}{\index{Blackjack\-Table@{Blackjack\-Table}!Game\-Finished@{Game\-Finished}}
+\index{Game\-Finished@{Game\-Finished}!BlackjackTable@{Blackjack\-Table}}
+\subsubsection[{Game\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void Blackjack\-Table\-::\-Game\-Finished (
+\begin{DoxyParamCaption}
+\item[{bool}]{user\-Win}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_blackjack_table_a54a84c3cf0b00d6b6752ea492cda19a4}
+If a message is typed into the line edit box then let's make sure that the message is received to the server and then sent. 
+\begin{DoxyParams}{Parameters}
+{\em message} & is a Q\-String allowing people to talk over the network.\-This allows us to signal off that the user has won \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Blackjack\-Table.\-h\item 
+Blackjack\-Table.\-cpp\end{DoxyCompactItemize}

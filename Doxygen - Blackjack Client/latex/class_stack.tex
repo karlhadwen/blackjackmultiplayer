@@ -1,0 +1,107 @@
+\hypertarget{class_stack}{\section{Stack$<$ D\-T $>$ Class Template Reference}
+\label{class_stack}\index{Stack$<$ D\-T $>$@{Stack$<$ D\-T $>$}}
+}
+
+
+{\ttfamily \#include $<$stack.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stack_ad41e41e610dc6cf9bb229160f5f205d3}{Stack} ()
+\begin{DoxyCompactList}\small\item\em The stack constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_stack_a72a1b990711e7d12b8fd0804b431ad22}{$\sim$\-Stack} ()
+\begin{DoxyCompactList}\small\item\em The stack deconstructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_stack_a08eb7cd8ca96965989c17405808b9d42}{size} ()
+\item 
+bool \hyperlink{class_stack_a37519366e7a3b338bdc278a9c9b8a131}{push} (D\-T new\-\_\-card)
+\item 
+bool \hyperlink{class_stack_a9f16d1c68cef90bc1859afd6fce88734}{pop} (D\-T \&get\-\_\-card)
+\item 
+void \hyperlink{class_stack_acce5debc5c2f8e0cb5238af3d6ddc433}{clear} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class D\-T$>$class Stack$<$ D\-T $>$}
+
+$<$ A template class for the D\-T All the cards are stored on the stack, it makes it really easy to control what is going on. We can push and pop of the stack. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_stack_ad41e41e610dc6cf9bb229160f5f205d3}{\index{Stack@{Stack}!Stack@{Stack}}
+\index{Stack@{Stack}!Stack@{Stack}}
+\subsubsection[{Stack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ {\bf Stack}$<$ D\-T $>$\-::{\bf Stack} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stack_ad41e41e610dc6cf9bb229160f5f205d3}
+
+
+The stack constructor. 
+
+We must set the top of the stack to N\-U\-L\-L. The next value is then set to 0. \hypertarget{class_stack_a72a1b990711e7d12b8fd0804b431ad22}{\index{Stack@{Stack}!$\sim$\-Stack@{$\sim$\-Stack}}
+\index{$\sim$\-Stack@{$\sim$\-Stack}!Stack@{Stack}}
+\subsubsection[{$\sim$\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ {\bf Stack}$<$ D\-T $>$\-::$\sim${\bf Stack} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stack_a72a1b990711e7d12b8fd0804b431ad22}
+
+
+The stack deconstructor. 
+
+We must clear the stack when we deconstruct. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_stack_acce5debc5c2f8e0cb5238af3d6ddc433}{\index{Stack@{Stack}!clear@{clear}}
+\index{clear@{clear}!Stack@{Stack}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ void {\bf Stack}$<$ D\-T $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stack_acce5debc5c2f8e0cb5238af3d6ddc433}
+Clear the stack and remove any node or value. \hypertarget{class_stack_a9f16d1c68cef90bc1859afd6fce88734}{\index{Stack@{Stack}!pop@{pop}}
+\index{pop@{pop}!Stack@{Stack}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ bool {\bf Stack}$<$ D\-T $>$\-::pop (
+\begin{DoxyParamCaption}
+\item[{D\-T \&}]{get\-\_\-card}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stack_a9f16d1c68cef90bc1859afd6fce88734}
+Let's pop the top of the stack and get the pointer value of the card. 
+\begin{DoxyParams}{Parameters}
+{\em \&get\-\_\-card} & address so we can pop it from the stack. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true when we have the card. 
+\end{DoxyReturn}
+\hypertarget{class_stack_a37519366e7a3b338bdc278a9c9b8a131}{\index{Stack@{Stack}!push@{push}}
+\index{push@{push}!Stack@{Stack}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ bool {\bf Stack}$<$ D\-T $>$\-::push (
+\begin{DoxyParamCaption}
+\item[{D\-T}]{new\-\_\-card}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stack_a37519366e7a3b338bdc278a9c9b8a131}
+Let's push onto the stack. 
+\begin{DoxyParams}{Parameters}
+{\em new\-\_\-card} & to add to the \hyperlink{struct_card_node}{Card\-Node}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stack size. 
+\end{DoxyReturn}
+\hypertarget{class_stack_a08eb7cd8ca96965989c17405808b9d42}{\index{Stack@{Stack}!size@{size}}
+\index{size@{size}!Stack@{Stack}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ int {\bf Stack}$<$ D\-T $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stack_a08eb7cd8ca96965989c17405808b9d42}
+Let's return the size of the stack. \begin{DoxyReturn}{Returns}
+stack size. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+stack.\-h\end{DoxyCompactItemize}

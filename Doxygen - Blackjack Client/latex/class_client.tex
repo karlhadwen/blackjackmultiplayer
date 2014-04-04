@@ -1,0 +1,144 @@
+\hypertarget{class_client}{\section{Client Class Reference}
+\label{class_client}\index{Client@{Client}}
+}
+
+
+{\ttfamily \#include $<$Client.\-h$>$}
+
+Inheritance diagram for Client\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_client}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_client_ab7bd1cdd78e0a488cf3f0424ced25c56}{Chat\-Message\-Received} (Q\-String message)
+\item 
+void \hyperlink{class_client_af5d7d3f9774f38235ebc904e9030ce2e}{Score\-Table\-Results\-Updated} (Q\-String results)
+\item 
+void \hyperlink{class_client_adc8e44dd81c568518383c6078f3335e5}{Authorization\-Error} ()
+\item 
+void \hyperlink{class_client_ab933a5ebdc0bcf97ea6c4d8cbb0ffb94}{Log\-Out} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_client_adb0af80eef174ae39ee30dd7565659f8}{Client} (Q\-String username, Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em The client constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_client_a958fe0409b3ee35c4a84779ec556ad88}{Connect} (unsigned port)
+\item 
+void \hyperlink{class_client_a57df544a36437362482b5eeab936ea6f}{Send\-Message} (Q\-String message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inherit Q\-Tcp\-Socket as we need it to connect and retrieve information. This class connects up to the Tcp\-Socket and allows us to send signals to the slots that help us connect and disconnect. In addition to this the private slots can connect, disconnect, read messages and show slot errors 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_client_adb0af80eef174ae39ee30dd7565659f8}{\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\subsubsection[{Client}]{\setlength{\rightskip}{0pt plus 5cm}Client\-::\-Client (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{username, }
+\item[{Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_client_adb0af80eef174ae39ee30dd7565659f8}
+
+
+The client constructor. 
+
+We must make sure we construct a client with a username, and if a username is not set we cannot add a client.
+
+Let's connect up the client and set the connections to the server. We also must keep track of the connect and disconnect--esp (signals and slots). 
+\begin{DoxyParams}{Parameters}
+{\em username} & is a Q\-String to the client's username \\
+\hline
+{\em parent} & is just basically a pointer to the parent. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_client_adc8e44dd81c568518383c6078f3335e5}{\index{Client@{Client}!Authorization\-Error@{Authorization\-Error}}
+\index{Authorization\-Error@{Authorization\-Error}!Client@{Client}}
+\subsubsection[{Authorization\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::\-Authorization\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_client_adc8e44dd81c568518383c6078f3335e5}
+We must check that there are no errors. If there is an error we signal that there is, and we will then deal with it. \hypertarget{class_client_ab7bd1cdd78e0a488cf3f0424ced25c56}{\index{Client@{Client}!Chat\-Message\-Received@{Chat\-Message\-Received}}
+\index{Chat\-Message\-Received@{Chat\-Message\-Received}!Client@{Client}}
+\subsubsection[{Chat\-Message\-Received}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::\-Chat\-Message\-Received (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_client_ab7bd1cdd78e0a488cf3f0424ced25c56}
+We have to check that the message is in the input box before we can send anything, because we don't want to send bytes down the stream if the line edit is empty. 
+\begin{DoxyParams}{Parameters}
+{\em message} & is a Q\-String that holds the network'd message. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_client_a958fe0409b3ee35c4a84779ec556ad88}{\index{Client@{Client}!Connect@{Connect}}
+\index{Connect@{Connect}!Client@{Client}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}bool Client\-::\-Connect (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{port}
+\end{DoxyParamCaption}
+)}}\label{class_client_a958fe0409b3ee35c4a84779ec556ad88}
+We use the bool variable to see if the port is active or not active. By default we will be using the 7777 port as the default because it's far from any normal port, therefore we won't use the same port as something else. 
+\begin{DoxyParams}{Parameters}
+{\em port} & which is unsigned before we don't know what it is yet.\\
+\hline
+\end{DoxyParams}
+Connect up to the server on a specific port 
+\begin{DoxyParams}{Parameters}
+{\em port} & is the port we're connect to, generally 7777 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the port that we're waiting on to connect 
+\end{DoxyReturn}
+\hypertarget{class_client_ab933a5ebdc0bcf97ea6c4d8cbb0ffb94}{\index{Client@{Client}!Log\-Out@{Log\-Out}}
+\index{Log\-Out@{Log\-Out}!Client@{Client}}
+\subsubsection[{Log\-Out}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::\-Log\-Out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_client_ab933a5ebdc0bcf97ea6c4d8cbb0ffb94}
+It's imperative that we have a Log\-Out function so that we can get rid of any connections that might be held up on the server. \hypertarget{class_client_af5d7d3f9774f38235ebc904e9030ce2e}{\index{Client@{Client}!Score\-Table\-Results\-Updated@{Score\-Table\-Results\-Updated}}
+\index{Score\-Table\-Results\-Updated@{Score\-Table\-Results\-Updated}!Client@{Client}}
+\subsubsection[{Score\-Table\-Results\-Updated}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::\-Score\-Table\-Results\-Updated (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_client_af5d7d3f9774f38235ebc904e9030ce2e}
+Update the scores on the score table. This will signal to the method that we have a results update and we must update the table. 
+\begin{DoxyParams}{Parameters}
+{\em results} & is a Q\-String that holds the data that we cut up. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_client_a57df544a36437362482b5eeab936ea6f}{\index{Client@{Client}!Send\-Message@{Send\-Message}}
+\index{Send\-Message@{Send\-Message}!Client@{Client}}
+\subsubsection[{Send\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void Client\-::\-Send\-Message (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_client_a57df544a36437362482b5eeab936ea6f}
+Constructor to pull in the Q\-Widget$\ast$ parent 
+\begin{DoxyParams}{Parameters}
+{\em message} & is basically a Q\-String var to send a message down the network.\\
+\hline
+\end{DoxyParams}
+We use this method as a lower method that uses a bytearray and a datastream. We set the version of the blocks to 16 bytes. 
+\begin{DoxyParams}{Parameters}
+{\em message} & that we send across the local network. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Client.\-h\item 
+Client.\-cpp\end{DoxyCompactItemize}

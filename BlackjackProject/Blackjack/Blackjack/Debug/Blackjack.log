@@ -1,0 +1,22 @@
+﻿Build started 11/24/2013 8:51:16 AM.
+     1>Project "C:\Users\Dav\Documents\Visual Studio 2012\Projects\Blackjack\Blackjack\Blackjack.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.1.1\5.1.1\msvc2012\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.1.1\5.1.1\msvc2012\include\QtCore /IC:\Qt\Qt5.1.1\5.1.1\msvc2012\include\QtGui /IC:\Qt\Qt5.1.1\5.1.1\msvc2012\include\QtNetwork /IC:\Qt\Qt5.1.1\5.1.1\msvc2012\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Blackjack.cpp
+         Blackjack.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Dav\Documents\Visual Studio 2012\Projects\Blackjack\Win32\Debug\\Blackjack.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.1.1\5.1.1\msvc2012\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Networkd.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Dav\Documents\Visual Studio 2012\Projects\Blackjack\Win32\Debug\Blackjack.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Dav\Documents\Visual Studio 2012\Projects\Blackjack\Win32\Debug\Blackjack.lib" /MACHINE:X86 /SAFESEH Debug\Blackjack.obj
+         Debug\BlackjackTable.obj
+         Debug\card.obj
+         Debug\CardsSet.obj
+         Debug\Client.obj
+         Debug\moc_Blackjack.obj
+         Debug\moc_BlackjackTable.obj
+         Debug\moc_Client.obj
+         Debug\qrc_blackjack.obj
+         Debug\main.obj
+         Blackjack.vcxproj -> C:\Users\Dav\Documents\Visual Studio 2012\Projects\Blackjack\Win32\Debug\Blackjack.exe
+     1>Done Building Project "C:\Users\Dav\Documents\Visual Studio 2012\Projects\Blackjack\Blackjack\Blackjack.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.66

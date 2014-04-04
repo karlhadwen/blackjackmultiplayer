@@ -1,0 +1,100 @@
+\hypertarget{class_hand}{\section{Hand$<$ D\-T $>$ Class Template Reference}
+\label{class_hand}\index{Hand$<$ D\-T $>$@{Hand$<$ D\-T $>$}}
+}
+
+
+{\ttfamily \#include $<$hand.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hand_ae3cef74a1e4a2cf45d630b347b923eae}{Hand} ()
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_hand}{Hand} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_hand_a021a43d1a2eff97afed21395e70181e1}{$\sim$\-Hand} ()
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_hand}{Hand} destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_hand_a912c20114230b88f5e578a899d7e75c6}{add} (D\-T new\-\_\-card)
+\item 
+void \hyperlink{class_hand_a665d8404a3b51991a0d0a0a3fc4c9a4e}{clear} ()
+\item 
+int \hyperlink{class_hand_a13520d75c81712f57a18c81322137b72}{value} ()
+\item 
+int \hyperlink{class_hand_a5e73744dfcbb49d33958702fa6b6da6a}{hand\-\_\-size} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class D\-T$>$class Hand$<$ D\-T $>$}
+
+$<$ A template class for the D\-T This class holds the hand values and what the size of the hand is, what is currently going on within the game and if we need a new hand. We can also get the value of a card here. Moreover we can also get the hand size. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hand_ae3cef74a1e4a2cf45d630b347b923eae}{\index{Hand@{Hand}!Hand@{Hand}}
+\index{Hand@{Hand}!Hand@{Hand}}
+\subsubsection[{Hand}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ {\bf Hand}$<$ D\-T $>$\-::{\bf Hand} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_hand_ae3cef74a1e4a2cf45d630b347b923eae}
+
+
+The \hyperlink{class_hand}{Hand} Constructor. 
+
+We call init to make sure we have a game ready to play. \hypertarget{class_hand_a021a43d1a2eff97afed21395e70181e1}{\index{Hand@{Hand}!$\sim$\-Hand@{$\sim$\-Hand}}
+\index{$\sim$\-Hand@{$\sim$\-Hand}!Hand@{Hand}}
+\subsubsection[{$\sim$\-Hand}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ {\bf Hand}$<$ D\-T $>$\-::$\sim${\bf Hand} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_hand_a021a43d1a2eff97afed21395e70181e1}
+
+
+The \hyperlink{class_hand}{Hand} destructor. 
+
+Destroy the cards and make sure we deconstruct. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hand_a912c20114230b88f5e578a899d7e75c6}{\index{Hand@{Hand}!add@{add}}
+\index{add@{add}!Hand@{Hand}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ bool {\bf Hand}$<$ D\-T $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{D\-T}]{new\-\_\-card}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_hand_a912c20114230b88f5e578a899d7e75c6}
+Add a new card. \begin{DoxyReturn}{Returns}
+true at the end of the method. 
+\end{DoxyReturn}
+\hypertarget{class_hand_a665d8404a3b51991a0d0a0a3fc4c9a4e}{\index{Hand@{Hand}!clear@{clear}}
+\index{clear@{clear}!Hand@{Hand}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ void {\bf Hand}$<$ D\-T $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_hand_a665d8404a3b51991a0d0a0a3fc4c9a4e}
+Clear the cards. \hypertarget{class_hand_a5e73744dfcbb49d33958702fa6b6da6a}{\index{Hand@{Hand}!hand\-\_\-size@{hand\-\_\-size}}
+\index{hand\-\_\-size@{hand\-\_\-size}!Hand@{Hand}}
+\subsubsection[{hand\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ int {\bf Hand}$<$ D\-T $>$\-::hand\-\_\-size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_hand_a5e73744dfcbb49d33958702fa6b6da6a}
+Get the hand size. \begin{DoxyReturn}{Returns}
+the hand size (example\-: 21) 
+\end{DoxyReturn}
+\hypertarget{class_hand_a13520d75c81712f57a18c81322137b72}{\index{Hand@{Hand}!value@{value}}
+\index{value@{value}!Hand@{Hand}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-T$>$ int {\bf Hand}$<$ D\-T $>$\-::value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_hand_a13520d75c81712f57a18c81322137b72}
+Get the value of the cards. $<$ set card value to zero.
+
+Get value of the cards and the face and suit of the cards.
+
+We have to see what the value of the ace is.
+
+$<$ return the value of the suited card. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+hand.\-h\end{DoxyCompactItemize}

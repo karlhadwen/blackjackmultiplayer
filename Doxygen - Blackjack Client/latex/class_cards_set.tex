@@ -1,0 +1,84 @@
+\hypertarget{class_cards_set}{\section{Cards\-Set Class Reference}
+\label{class_cards_set}\index{Cards\-Set@{Cards\-Set}}
+}
+
+
+{\ttfamily \#include $<$Cards\-Set.\-h$>$}
+
+Inheritance diagram for Cards\-Set\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cards_set}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cards_set_ac2d6c91faf26e135fac8a0b6635807c7}{Cards\-Set} (Q\-Widget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructor to pull in the Q\-Widget$\ast$ parent. \end{DoxyCompactList}\item 
+void \hyperlink{class_cards_set_a2bda25fc61c9aab36d11c96489cecaa9}{Add\-Card} (Q\-String card\-Name)
+\item 
+void \hyperlink{class_cards_set_a9fa4f85e786417d6cbe21b2dcf0b09ed}{Clear} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic class for the card set, we setup the Q\-Widget and then have a small amount of methods that control adding cards and clearing the deck. In addition to this I've also added a private pointer that points to the layout. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cards_set_ac2d6c91faf26e135fac8a0b6635807c7}{\index{Cards\-Set@{Cards\-Set}!Cards\-Set@{Cards\-Set}}
+\index{Cards\-Set@{Cards\-Set}!CardsSet@{Cards\-Set}}
+\subsubsection[{Cards\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Cards\-Set\-::\-Cards\-Set (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{class_cards_set_ac2d6c91faf26e135fac8a0b6635807c7}
+
+
+Constructor to pull in the Q\-Widget$\ast$ parent. 
+
+We must send the parent for the G\-U\-I to be available. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & is basically a var to the Q\-Widget$\ast$ pointer.\\
+\hline
+\end{DoxyParams}
+We must make sure that we set the layout and of course pull in the parent widget. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & is a Q\-Widget pointer to the widget that we use for a layout. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cards_set_a2bda25fc61c9aab36d11c96489cecaa9}{\index{Cards\-Set@{Cards\-Set}!Add\-Card@{Add\-Card}}
+\index{Add\-Card@{Add\-Card}!CardsSet@{Cards\-Set}}
+\subsubsection[{Add\-Card}]{\setlength{\rightskip}{0pt plus 5cm}void Cards\-Set\-::\-Add\-Card (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{card\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_cards_set_a2bda25fc61c9aab36d11c96489cecaa9}
+Add to the card set. We use a public method that allows us to the add to the cardset. The card and suit will be determined by another method. 
+\begin{DoxyParams}{Parameters}
+{\em card\-Name} & a Q\-String for the name of the card.\\
+\hline
+\end{DoxyParams}
+Add a card to the deck and make sure that we keep track of that particular card. 
+\begin{DoxyParams}{Parameters}
+{\em card\-Name} & we must keep track of this card using a Q\-String. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_cards_set_a9fa4f85e786417d6cbe21b2dcf0b09ed}{\index{Cards\-Set@{Cards\-Set}!Clear@{Clear}}
+\index{Clear@{Clear}!CardsSet@{Cards\-Set}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void Cards\-Set\-::\-Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cards_set_a9fa4f85e786417d6cbe21b2dcf0b09ed}
+Clear the card set.
+
+Simply clear the card deck and make sure we delete any childen of the cards. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Cards\-Set.\-h\item 
+Cards\-Set.\-cpp\end{DoxyCompactItemize}
