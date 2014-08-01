@@ -1,7 +1,7 @@
 Blackjack
 =========
 
-Local multiplayer blackjack built using Qt Creator 5.1.1 (C++); Runs by using a server and client.
+Local multiplayer blackjack built using Qt Creator 5.1.1 (C++); Runs by using a server and client. This project also has Doxygen documentation included for both client and server applications.
 
 How to load, run and setup the build directory
 =========
